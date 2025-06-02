@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Your YellowRoam Itinerary</title></head>
+<body>
+<h2>{{ greeting }}</h2>
+<h3>Your Itinerary</h3>
+<ul>
+{% for stop in itinerary %}
+    <li><strong>{{ stop.name }}</strong> ({{ stop.type }})<br>
+        Tags: {{ ", ".join(stop.tags) }}<br>
+        Elevation: {{ stop.elevation_ft }} ft<br>
+        <a href="{{ stop.apple_maps }}" target="_blank">View in Apple Maps</a>
+    </li><br>
+{% endfor %}
+</ul>
+<a href="/">Start Over</a>
+</body>
+</html>

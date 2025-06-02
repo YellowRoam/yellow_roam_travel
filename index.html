@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title>YellowRoam Itinerary Builder</title></head>
+<body>
+<h1>YellowRoam Travel Assistant</h1>
+<form method="post">
+    <label>Language:
+        <select name="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="hi">Hindi</option>
+            <option value="sv">Swedish</option>
+        </select>
+    </label><br><br>
+    <label>Trip Length (days):
+        <input type="number" name="days" min="1" max="10" value="3">
+    </label><br><br>
+    <label>Family-friendly? <select name="family">
+        <option value="yes">Yes</option><option value="no">No</option>
+    </select></label><br><br>
+    <label>Pet-friendly? <select name="pet">
+        <option value="no">No</option><option value="yes">Yes</option>
+    </select></label><br><br>
+    <label>Difficulty:
+        <select name="difficulty">
+            <option value="any">Any</option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="strenuous">Strenuous</option>
+        </select>
+    </label><br><br>
+    <button type="submit">Build My Itinerary</button>
+</form>
+</body>
+</html>
